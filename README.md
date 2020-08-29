@@ -1,7 +1,7 @@
 # P2PpythonChat
 This is the simple p2p python application for the chatting locally. 
 
-#Functionalities
+# Functionalities
 
 - [x] GUI using tkinter
 - [x] Server , client based on username
