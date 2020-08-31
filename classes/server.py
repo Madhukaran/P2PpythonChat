@@ -29,8 +29,8 @@ class Server(scb.ServerClientBase):
         print(self._host_user, self._system_user)
 
         self._lock = threading.Lock()
-        th = threading.Thread(target=self.new_conn_handler)
-        th.start()
+        self.th = threading.Thread(target=self.new_conn_handler)
+        self.th.start()
 
 
     @property
@@ -221,4 +221,8 @@ class Server(scb.ServerClientBase):
             for sock in self._users.keys():
                 sock.close()
             self._s.close()
+            
+            
+            
+            
 

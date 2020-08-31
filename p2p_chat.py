@@ -246,10 +246,13 @@ class P2pChat(tk.Frame):
             self.chat.destroy()
         root.destroy()
 
+        
+
 
 
 root = tk.Tk()
 p2p_chat = P2pChat(master=root)
 p2p_chat.mainloop()
+message = server.Server.send_msg_to_user("hi", 192.168.43.192:8001)
 
 
